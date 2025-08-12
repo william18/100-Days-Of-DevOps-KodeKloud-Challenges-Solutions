@@ -1,0 +1,35 @@
+---
+- name: Deploy Nautilus beta Java app on Tomcat
+  hosts: stapp02
+  become: yes
+  tasks:
+    - name: Install Tomcat and required packages
+      dnf:
+        name:
+          - tomcat
+          - tomcat-webapps
+          - tomcat-admin-webapps
+        state: present
+
+    - name: Change tomcat port to 8087 in server.xml
+      ansible.builtin.replace:
+        path: /etc/tomcat/server.xml
+        regexp: 'port="8080"'
+        replace: 'port="8087"'
+
+    - name: Remove old extracted ROOT app folder
+      ansible.builtin.file:
+        path: /var/lib/tomcat/webapps/ROOT
+        state: absent
+
+    - name: Copy ROOT.war from jump host to App Server 2
+      ansible.builtin.copy:
+        src: /tmp/ROOT.war
+        dest: /var/lib/tomcat/webapps/ROOT.war
+        mode: '0644'
+
+    - name: Enable and start Tomcat service
+      ansible.builtin.systemd:
+        name: tomcat
+        enabled: yes
+        state: restarted
