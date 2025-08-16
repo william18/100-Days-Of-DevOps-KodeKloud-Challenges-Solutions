@@ -1,4 +1,4 @@
-# 100-Days-Of-Devops---Kodekloud
+# 100 Days of DevOps – KodeKloud Challenges Solutions
 
 A list of challenges and topics covered during the 100 Days of DevOps journey.
 
