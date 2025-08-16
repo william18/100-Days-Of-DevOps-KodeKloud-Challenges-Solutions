@@ -1,6 +1,6 @@
 # 100 Days of DevOps – KodeKloud Challenges Solutions
 
-A list of challenges and topics covered during the 100 Days of DevOps journey.
+This repository contains my solutions and notes from the **100 Days of DevOps** challenge on **KodeKloud**. It covers practical DevOps topics including Linux, Docker, Kubernetes, Ansible, Terraform, Jenkins, and AWS.
 
 1. Day 1: Linux User Setup with Non-Interactive Shell  
 2. Day 2: Temporary User Setup with Expiry  
@@ -102,3 +102,5 @@ A list of challenges and topics covered during the 100 Days of DevOps journey.
 98. Day 98: Launch EC2 in Private VPC Subnet Using Terraform  
 99. Day 99: Attach IAM Policy for DynamoDB Access Using Terraform  
 100. Day 100: Create and Configure Alarm Using CloudWatch Using Terraform
+**Keywords:** 100 Days of DevOps, KodeKloud, DevOps challenges, Docker, Kubernetes, Ansible, Terraform, Jenkins, Linux, AWS
+
