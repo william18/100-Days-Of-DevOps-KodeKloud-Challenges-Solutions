@@ -42,6 +42,7 @@
               }
           }
 
+
     - name: Restart nginx
       service:
         name: nginx
