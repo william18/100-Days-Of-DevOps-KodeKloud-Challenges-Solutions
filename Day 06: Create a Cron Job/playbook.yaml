@@ -1,6 +1,5 @@
-  ---
-    - name: Configure cronie and cron job on Nautilus app servers
-  hosts: nautlius_app_servers
+- name: Configure cronie and cron job on Nautilus app servers
+  hosts: nautilus_app_servers
   become: yes
 
   tasks:
