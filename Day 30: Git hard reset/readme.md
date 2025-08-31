@@ -3,6 +3,8 @@
 ### Steps
 
 ```bash
+    # 0. Ssh into the storage server
+    ssh natasha@ststor01
     # 1. Go to the repository
     cd /usr/src/kodekloudrepos/official
 
