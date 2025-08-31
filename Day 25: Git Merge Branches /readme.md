@@ -1,6 +1,9 @@
 
 ## Steps
-
+0. **Ssh into Storage Server**
+   ```bash
+   ssh natasha@ststor01
+   ```
 1. **Navigate to the repository**
    ```bash
    cd /usr/src/kodekloudrepos/cluster
