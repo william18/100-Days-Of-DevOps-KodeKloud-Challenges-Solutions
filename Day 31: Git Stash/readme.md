@@ -3,7 +3,7 @@
 ```bash
 
 #ssh into the storage server
-ssh natsha@ststor01
+ssh natasha@ststor01
 
 # Go to the repository
 cd /usr/src/kodekloudrepos/beta
