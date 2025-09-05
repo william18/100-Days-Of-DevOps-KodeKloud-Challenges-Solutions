@@ -1,6 +1,7 @@
 - name: Configure cronie and cron job on Nautilus app servers
   hosts: nautilus_app_servers
   become: yes
+  serial: 1 ## lab runs out of resources otherwise
 
   tasks:
     - name: Install cronie package
