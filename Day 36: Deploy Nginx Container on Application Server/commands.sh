@@ -1,3 +1,6 @@
+# Step 0: Ssh into the App Server 1 :
+ssh tony@stapp01
+
 # Step 1: Pull the nginx image with the alpine tag
 docker pull nginx:alpine
 
