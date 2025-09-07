@@ -1,2 +1,2 @@
-# i try to do thiswith ansible but it doesn't work , if u have any suggestion , u can put it in the duscussion
-#ssh into each machine and run the bash script : script.sh
+check this proposition : for ansible but u can do it using the commands.sh file only 
+https://github.com/MelkiMeriem/100-Days-Of-DevOps-KodeKloud-Challenges-Solutions/discussions/5#discussion-8844120
