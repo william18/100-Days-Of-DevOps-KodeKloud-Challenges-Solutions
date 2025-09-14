@@ -1,0 +1,10 @@
+version: '3.8'
+
+services:
+  webserver:   # service name, can be anything
+    image: httpd:latest
+    container_name: httpd
+    ports:
+      - "6000:80"
+    volumes:
+      - /opt/itadmin:/usr/local/apache2/htdocs
