@@ -2,6 +2,7 @@
 - name: Configure DB Server
   hosts: db_server
   become: yes
+  serial: 1
   tasks:
     - name: Install required Python MySQL client
       yum:
